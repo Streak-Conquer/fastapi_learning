@@ -39,7 +39,6 @@ model_config = {
             }
         }
 
-
 books = [
     BOOK(1, "Mike and sytems", "Miko", "the best book to learn systems", 5),
     BOOK(2, "The live of API", "Fikre", "What you need to master API", 4.5),
@@ -72,5 +71,4 @@ def create_new_book(book: BookRequest):
 
 
 
-if __name__ == "__main__":
-    uvicorn.run("main2:app", host="127.0.0.1", port=8000, reload=True)
+
