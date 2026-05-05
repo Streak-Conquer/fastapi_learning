@@ -50,7 +50,7 @@ books = [
 ]
 @app.get("/")
 def welcome():
-    return "message: Welcome to the book store"
+    return {"message: Welcome to the book store"}
 
 @app.get("/books")
 def list_books():
@@ -68,7 +68,7 @@ def create_book(book: BookRequest):
 def create_new_book(book: BookRequest):
     new_book = BOOK(**book.model_dump())
     books.append(new_book)
-    return new_booki
+    return new_book
 
 
 
